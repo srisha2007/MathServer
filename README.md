@@ -33,7 +33,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 math.html
-'''
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,9 +94,9 @@ h1 {
 </div>
 </body>
 </html>
-'''
+
 urls.py
-'''
+
 from django.urls import path
 from django.contrib import admin
 om mathapp import views
@@ -105,9 +105,9 @@ urlpatterns = [
     path('power/',views.power,name="power"),
     path('',views.power,name="power")
 ]
-'''
+
 views.py
-'''
+
 from django.shortcuts import render
 def power(request):
     context = {}
@@ -128,7 +128,7 @@ def power(request):
         print('Power =', power)
     
     return render(request, 'mathapp/math.html',context)
-'''    
+```    
 
 ## HOMEPAGE:
 ![alt text](<Screenshot 2024-12-08 203047.png>)
