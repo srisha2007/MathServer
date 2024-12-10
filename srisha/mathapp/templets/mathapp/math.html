@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Power Of a Lamp Filament</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style type="text/css">
+body {
+    background-color: rgb(0, 0, 0);
+}
+.edge {
+    width: 100%;
+    padding-top: 250px;
+    text-align: center;
+}
+.box {
+    display: inline-block;
+    border: thick dashed rgb(116, 8, 98);
+    width: 500px;
+    min-height: 300px;
+    font-size: 20px;
+    background-color: rgb(9, 213, 240);
+}
+.formelt {
+    color: black;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+h1 {
+    color: black;
+    padding-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="edge">
+    <div class="box">
+        <h1>power of a lamp filament </h1>
+        <h3>INDHUMATHI(24900500)</h3>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="formelt">
+                Intensity: <input type="text" name="intensity" value="{{i}}">m<br/>
+            </div>
+            <div class="formelt">
+                Resistance: <input type="text" name="resistance" value="{{r}}">m<br/>
+            </div>
+            <div class="formelt">
+                <input type="submit" value="Calculate"><br/>
+            </div>
+            <div class="formelt">
+                Power: <input type="text" name="power" value="{{power}}">m<sup>2</sup><br/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
