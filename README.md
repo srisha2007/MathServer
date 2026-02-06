@@ -1,15 +1,14 @@
-# Ex.05 Design a Website for Server Side Processing
+# Ex.04 Design a Website for Server Side Processing
 ## Date:
 
 ## AIM:
- To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side. 
-
+To create a web page to calculate total bill amount with GST from price and GST percentage using server-side scripts.
 
 ## FORMULA:
-P = I<sup>2</sup>R
-<br> P --> Power (in watts)
-<br> I --> Intensity
-<br> R --> Resistance
+Bill = P + (P * GST / 100)
+<br> P --> Price (in Rupees)
+<br> GST --> GST (in Percentage)
+<br> Bill --> Total Bill Amount (in Rupees)
 
 ## DESIGN STEPS:
 
@@ -23,22 +22,34 @@ Create Django Admin project.
 Create a New App under the Django Admin project.
 
 ### Step 4:
-Create python programs for views and urls to perform server side processing.
-
-### Step 5:
 Create a HTML file to implement form based input and output.
 
+### Step 5:
+Create python programs for views and urls to perform server side processing.
+
 ### Step 6:
-Publish the website in the given URL.
+Receive input values from the form using request.POST.get().
 
-## PROGRAM :
+### Step 7:
+Calculate the total bill amount (including GST).
+
+### Step 8:
+Display the calculated result in the server console.
+
+### Step 9:
+Render the result to the HTML template.
+
+### Step 10:
+Publish the website in Localhost.
+
+## PROGRAM:
 
 
-## SERVER SIDE PROCESSING:
+## OUTPUT - SERVER SIDE:
 
 
-## HOMEPAGE:
+## OUTPUT - WEBPAGE:
 
 
 ## RESULT:
-The program for performing server side processing is completed successfully.
+The a web page to calculate total bill amount with GST from price and GST percentage using server-side scripts is created successfully.
